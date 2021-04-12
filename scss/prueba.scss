@@ -77,12 +77,16 @@ footer{
     }
 }
 
-.container div img{
+.container{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,0.5130427170868348) 0%, rgba(246,174,215,1) 13%, rgba(252,196,229,1) 40%, rgba(254,247,251,1) 74%, rgba(254,231,244,1) 100%, rgba(255,255,255,0.42620798319327735) 100%);
+    div img{
     height: 15rem;
     width: 20rem;
     border-radius: 10px;
     margin: 10px;
     justify-content: space-evenly; 
+    }
 }
 .contenedor--main{
     #contenedor__mensajeImportante--main{
@@ -143,6 +147,12 @@ $titulo:rosa;
         color: rgb(7, 7, 7);
         font-size: 3rem;
     }
+}
+.carousel-control-prev-icon{
+    background-color: rgb(108, 3, 206);
+}
+.carousel-control-next-icon{
+    background-color: rgb(108, 3, 206);
 }
 
 @each $color in white, blue, yellow, black{

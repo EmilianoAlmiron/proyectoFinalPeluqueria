@@ -62,12 +62,15 @@ footer .redSocial--principal {
     text-transform: uppercase;
     color: blanchedalmond; }
 
-.container div img {
-  height: 15rem;
-  width: 20rem;
-  border-radius: 10px;
-  margin: 10px;
-  justify-content: space-evenly; }
+.container {
+  background: white;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.513043) 0%, #f6aed7 13%, #fcc4e5 40%, #fef7fb 74%, #fee7f4 100%, rgba(255, 255, 255, 0.426208) 100%); }
+  .container div img {
+    height: 15rem;
+    width: 20rem;
+    border-radius: 10px;
+    margin: 10px;
+    justify-content: space-evenly; }
 
 .contenedor--main #contenedor__mensajeImportante--main {
   text-transform: uppercase;
@@ -102,6 +105,12 @@ footer .redSocial--principal {
   background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
   color: white;
   font-size: 3rem; }
+
+.carousel-control-prev-icon {
+  background-color: #6c03ce; }
+
+.carousel-control-next-icon {
+  background-color: #6c03ce; }
 
 .white {
   color: white;
