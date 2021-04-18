@@ -5,27 +5,18 @@
 
 .contenedor--principal {
   background: #2e0030;
-  background: linear-gradient(90deg, rgba(46, 0, 48, 0.770746) 0%, rgba(98, 3, 77, 0.622286) 47%, rgba(142, 1, 34, 0.68111) 100%); }
-  .contenedor--principal .contenedor__logotipo--principal {
-    width: 20rem;
-    margin-left: 16%; }
-
-.contenedor--principal .contenedor__navegacion--principal {
-  overflow: auto; }
-  .contenedor--principal .contenedor__navegacion--principal #contenedor__box--principal {
-    display: block;
-    text-align: center;
-    padding: 2.77rem; }
-    .contenedor--principal .contenedor__navegacion--principal #contenedor__box--principal li {
-      font-size: 1.5rem;
-      list-style: none;
-      display: inline-block;
-      padding: 5px 10px;
-      margin-bottom: 10px;
-      border: 1px solid black;
-      border-radius: 30px; }
-      .contenedor--principal .contenedor__navegacion--principal #contenedor__box--principal li a {
-        text-decoration: none; }
+  background: linear-gradient(90deg, rgba(46, 0, 48, 0.770746) 0%, rgba(98, 3, 77, 0.622286) 47%, rgba(142, 1, 34, 0.68111) 100%);
+  width: 100%;
+  height: 100%;
+  display: flex; }
+  .contenedor--principal .contenedor__logo--principal {
+    width: 15%; }
+    .contenedor--principal .contenedor__logo--principal .contenedor__logotipo--principal {
+      width: 90%;
+      margin: auto; }
+  .contenedor--principal .contenedor__nav--pricipal {
+    width: 100%;
+    margin: 1.5%; }
 
 footer .redSocial--principal {
   text-align: center;
@@ -46,9 +37,10 @@ footer .redSocial--principal {
   background-color: #a4508b;
   background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
   color: white;
-  font-size: 3rem; }
+  font-size: 2.5rem;
+  margin: 0; }
 
-.contenedor--principal .contenedor__marca--principal {
+.contenedor__marca--principal {
   text-align: center;
   background-color: whitesmoke; }
 
@@ -61,20 +53,6 @@ footer .redSocial--principal {
   .contenedor__parrafoInformativo--main .contenedor__span--main, .informacionTurnos .contenedor__span--main {
     text-transform: uppercase;
     color: blanchedalmond; }
-
-.container {
-  background: white;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.513043) 0%, #f6aed7 13%, #fcc4e5 40%, #fef7fb 74%, #fee7f4 100%, rgba(255, 255, 255, 0.426208) 100%); }
-  .container div img {
-    height: 15rem;
-    width: 20rem;
-    border-radius: 10px;
-    margin: 10px;
-    justify-content: space-evenly; }
-
-.contenedor--main #contenedor__mensajeImportante--main {
-  text-transform: uppercase;
-  color: blueviolet; }
 
 .resaltarSpan {
   font-size: 105%;
@@ -95,9 +73,36 @@ footer .redSocial--principal {
   box-shadow: 3px 3px 10px 3px #b52222;
   justify-content: space-evenly; }
 
-.container #carouselExampleControls img {
-  height: 55rem;
-  padding: 0 16%; }
+.contenedor--cajaDeCombos #contenedor__combos p {
+  font-size: 20px;
+  color: #5f0a87; }
+
+.contenedor--cajaDeCombos #contenedor__combos h3 {
+  color: #e23b80; }
+
+.container--carusel {
+  width: 100%;
+  display: flex;
+  padding: 3% 0 3% 0;
+  background: white;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.513043) 0%, #f6aed7 13%, #fcc4e5 40%, #fef7fb 74%, #fee7f4 100%, rgba(255, 255, 255, 0.426208) 100%); }
+  .container--carusel .container {
+    width: 100%;
+    margin: 0 1% 0 1%; }
+    .container--carusel .container img {
+      border-radius: 100%;
+      box-shadow: 3px 3px 10px 3px rgba(189, 103, 247, 0.719);
+      width: 90%;
+      margin: 5%; }
+
+.contenedor--marcas {
+  display: flex; }
+  .contenedor--marcas .row {
+    width: 80%;
+    margin: auto;
+    padding: 2% 5% 2% 5%; }
+    .contenedor--marcas .row img {
+      width: 5%; }
 
 .contenedor__titulo--principal {
   text-align: center;
@@ -131,25 +136,30 @@ footer .redSocial--principal {
 .informacionTurnos {
   padding: 0 10px; }
 
-.contenedor--main {
-  background-color: #fffefe; }
-  .contenedor--main .contenedor__informacionProfecional--main {
-    width: 50%;
-    margin: auto;
-    padding: 10%;
-    background-image: url(https://scontent.fcor10-3.fna.fbcdn.net/v/t1.6435-9/173863549_3961900133859710_7207285250033495990_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=730e14&_nc_ohc=-9QH7UV0cwoAX9feBE6&_nc_ht=scontent.fcor10-3.fna&oh=9ae21a79ae005639950586e947affe59&oe=609DF595);
-    border: 2px solid #3c03a7;
-    background-size: cover;
-    background-position: center; }
-  .contenedor--main .contenedor__parrafoTarjeta--main {
-    width: 100%;
+.contenedor__informacion--main {
+  background-color: #fffefe;
+  display: flex;
+  width: 100%; }
+  .contenedor__informacion--main .contenedor__perfil--main {
+    width: 70%;
+    box-shadow: 3px 3px 10px 3px rgba(189, 103, 247, 0.719);
+    margin: 3% 7% 3% 0%; }
+    .contenedor__informacion--main .contenedor__perfil--main img {
+      width: 100%; }
+  .contenedor__informacion--main .contenedor__parrafoTarjeta--main {
+    box-shadow: 3px 3px 10px 3px rgba(189, 103, 247, 0.719);
+    width: 70%;
+    margin: 3% 0 3% 7%;
     background: #2e0030;
     background: linear-gradient(90deg, rgba(46, 0, 48, 0.538253) 0%, rgba(54, 14, 45, 0.367384) 49%, rgba(240, 12, 66, 0.468225) 100%); }
-  .contenedor--main p {
+  .contenedor__informacion--main p {
+    margin: 5%;
     text-align: center;
-    font-size: 30px;
-    color: rgba(255, 255, 255, 0.904);
-    overflow: hidden; }
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.904); }
+    .contenedor__informacion--main p .contenedor__mensajeImportante--main {
+      color: #5f0a87;
+      font-weight: bold; }
 
 .contenedor__productos--mainCompras {
   width: 100%;
@@ -160,7 +170,7 @@ footer .redSocial--principal {
   overflow: hidden; }
   .contenedor__productos--mainCompras .productos {
     width: 330px;
-    height: 219px;
+    height: 330px;
     border-radius: 8px;
     margin: 20px;
     text-align: center;
@@ -234,9 +244,11 @@ footer .redSocial--principal {
       .footer__columnas ul li a:hover {
         font-weight: bold; }
 
-.footer-imagen {
-  width: 50px;
-  height: auto; }
+.red {
+  display: inline; }
+  .red .footer-imagen {
+    width: 50px;
+    height: auto; }
 
 .final {
   width: 100%; }
